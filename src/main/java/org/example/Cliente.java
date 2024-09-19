@@ -8,7 +8,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @Data
 @Builder
 @Entity
@@ -35,6 +34,6 @@ public class Cliente implements Serializable {
         this.apellido = apellido;
         this.nombre = nombre;
         this.domicilio = domicilio;
-        this.facturas = (facturas != null) ? facturas : new ArrayList<>();  // Inicializa si es null
+        this.facturas = (facturas != null) ? facturas : new ArrayList<>();
     }
 }
